@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Narakata Survey Form</h1>
+    <p id="description">Thankyou for listening to our musics!</p>
+    <form action="" method="post" id="survey-form">
+        <fieldset>
+                <label for="name" id="name-label">Name
+                    <input type="text" name="name" id="name" placeholder="Input your name..." required>
+                </label>
+                <label for="email" id="email-label">email
+                    <input type="email" name="email" id="email" placeholder="Input your email..." required>
+                </label>
+                <label for="age" id="number-label">Age
+                    <input type="number" name="age" id="number" pattern="[0-9]{2,}" placeholder="Input your age..." min="1" max="100">
+                </label>
+                <label for="song">Which song do you love?
+                    <select name="song" id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Kita yang Terbuang dan Sia-sia</option>
+                        <option value="2">Akhir Cerita</option>
+                        <option value="3">Kesamaan</option>
+                        <option value="4">Mengulang Kehilangan</option>
+                        <option value="5">Aku Ada untuk Kau yang Telah Tiada</option>
+                    </select>
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommend our music to your friends? <legend>
+                <label for="yes">
+                <input type="radio" id="yes"   name="recommend"value="1"  class="inline">Yes
+                </label>
+                <label for="no">
+                <input type="radio" id="no"name="recommend"value="2" class="inline">No
+                </label>
+                <label for="idk">
+                <input type="radio" id="idk"name="recommend"value="3" class="inline">I  don't know
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>Do you mind to rate our songs?</legend>
+            <label for="rating">
+                <input type="radio" id="one" name="rating" value="1" class="inline">1
+            </label>
+            <label for="rating">
+                <input type="radio" id="two" name="rating" value="2" class="inline">2
+            </label>
+            <label for="rating">
+                <input type="radio" id="three" name="rating" value="3" class="inline">3
+            </label>
+            <label for="rating">
+                <input type="radio" id="four" name="rating" value="4" class="inline">4
+            </label>
+            <label for="rating">
+                <input type="radio" id="five" name="rating" value="5" class="inline">5
+            </label>
+        </fieldset>
+        <label for="tnc">
+            <input type="checkbox" id="tnc" value="1" class="inline">  I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <label for="over18">
+            <input type="checkbox" id="over18" value="2" class="inline">  I'm over 18
+        </label>
+        <label for="textarea">
+            <textarea name="textarea" id="textarea" placeholder="words"></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
